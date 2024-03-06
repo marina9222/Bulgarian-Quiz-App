@@ -19,6 +19,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 #home-page {
@@ -91,6 +92,7 @@ img {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
+  width: 100%;
 }
 
 h2 {
