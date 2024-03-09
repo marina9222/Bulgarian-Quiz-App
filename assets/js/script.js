@@ -6,8 +6,6 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
-const username = document.getElementById("username");
-
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -73,7 +71,7 @@ getNewQuestion = () => {
     return window.location.assign("end.html"); // got to end page
   }
   questionNumber++;
-  questionCounterText.innerText = `${questionNumber} / ${MAX_QUESTIONS}`;
+  questionCounterText.innerText = `${questionNumber}/${MAX_QUESTIONS}`;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
