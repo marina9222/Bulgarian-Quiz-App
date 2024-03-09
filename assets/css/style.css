@@ -22,7 +22,9 @@
   padding: 20px;
 }
 
-#home-page {
+#home-page,
+#game,
+#end {
   background-color: #ccd3ca;
   border-radius: 15px;
   width: 700px;
@@ -57,6 +59,10 @@ img {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
+  border: none;
+  box-shadow: 0px 10px 22px 7px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 40%;
 }
 
 .btn:hover,
@@ -70,19 +76,6 @@ img {
 }
 
 /* ....Game page.... */
-
-#game {
-  background-color: #ccd3ca;
-  border-radius: 15px;
-  width: 700px;
-  padding: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 10px 22px 7px rgba(0, 0, 0, 0.1),
-    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
 
 .choice-text {
   font-size: 15px;
@@ -145,4 +138,26 @@ h2 {
 .header-main-text {
   font-size: 25px;
   font-weight: 400;
+}
+
+/* ....End page.... */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  border: none;
+}
+
+#final-score {
+  margin-bottom: 25px;
 }

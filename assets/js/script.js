@@ -6,6 +6,7 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
+const username = document.getElementById("username");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -67,6 +68,8 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionNumber >= MAX_QUESTIONS) {
+    localStorage.setItem("mostRecentScore", score);
+
     return window.location.assign("end.html"); // got to end page
   }
   questionNumber++;
