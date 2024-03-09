@@ -122,3 +122,27 @@ h2 {
 .incorrect {
   background-color: #ee4b2b;
 }
+
+/* ....Game header.... */
+
+#games-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header-item {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.header-prefix {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.header-main-text {
+  font-size: 25px;
+  font-weight: 400;
+}
