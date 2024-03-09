@@ -24,7 +24,8 @@
 
 #home-page,
 #game,
-#end {
+#end,
+#highscores {
   background-color: #ccd3ca;
   border-radius: 15px;
   width: 700px;
@@ -160,4 +161,17 @@ input {
 
 #final-score {
   margin-bottom: 25px;
+}
+
+/* ....High scores page.... */
+
+#highscores-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.high-scores {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
 }

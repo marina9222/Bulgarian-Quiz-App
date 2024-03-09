@@ -68,7 +68,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionNumber >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("end.html"); // got to end page
+    return window.location.assign("end.html"); // go to end page
   }
   questionNumber++;
   questionCounterText.innerText = `${questionNumber}/${MAX_QUESTIONS}`;
