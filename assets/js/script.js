@@ -6,11 +6,14 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionNumber = 0;
 let availableQuestions = [];
+let timer;
+let timeRemaining = 10;
 
 let questions = [
   {
@@ -64,14 +67,34 @@ startGame = () => {
   getNewQuestion();
 };
 
+startTimer = () => {
+  const timerEl = document.getElementById("timer");
+  timeRemaining = 10;
+  timerEl.textContent = `Time remaining: ${timeRemaining}s`;
+
+  timer = setInterval(() => {
+    timeRemaining--;
+    timerEl.textContent = `Time remaining: ${timeRemaining}s`;
+    if (timeRemaining <= 0) {
+      clearInterval(timer);
+      getNewQuestion();
+    }
+  }, 1000);
+};
+
+stopTimer = () => {
+  clearInterval(timer);
+};
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionNumber >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
     return window.location.assign("end.html"); // go to end page
   }
+
   questionNumber++;
   questionCounterText.innerText = `${questionNumber}/${MAX_QUESTIONS}`;
+  startTimer();
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
@@ -104,6 +127,7 @@ choices.forEach((choice) => {
       getNewQuestion();
     }, 1000);
   });
+  stopTimer();
 });
 
 incrementScore = (num) => {

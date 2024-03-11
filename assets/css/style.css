@@ -131,7 +131,8 @@ h2 {
   gap: 10px;
 }
 
-.header-prefix {
+.header-prefix,
+#timer {
   font-size: 25px;
   font-weight: 500;
 }
