@@ -46,6 +46,12 @@ img {
   margin-bottom: 30px;
 }
 
+label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 /* ....Buttons....  */
 
 .btn {
@@ -71,7 +77,6 @@ img {
   background-color: #78869b;
   cursor: pointer;
 }
-
 .btn[disabled]:hover {
   cursor: not-allowed;
 }
