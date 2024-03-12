@@ -67,7 +67,7 @@ img {
 }
 
 .btn:hover,
-.choice-text:hover {
+.choice-text:not(.incorrect):not(.correct):hover {
   background-color: #78869b;
   cursor: pointer;
 }

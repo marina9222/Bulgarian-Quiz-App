@@ -109,6 +109,7 @@ getNewQuestion = () => {
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
+    stopTimer();
 
     acceptingAnswers = false;
     const selectedChoice = e.target;
@@ -127,7 +128,6 @@ choices.forEach((choice) => {
       getNewQuestion();
     }, 1000);
   });
-  stopTimer();
 });
 
 incrementScore = (num) => {
