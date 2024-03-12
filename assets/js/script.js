@@ -15,55 +15,30 @@ let availableQuestions = [];
 let timer;
 let timeRemaining = 10;
 
-let questions = [
-  {
-    question: "How do you say a dog in Bulgarian?",
-    choice1: "Mechka",
-    choice2: "Mravka",
-    choice3: "Kuche",
-    choice4: "Kotka",
-    answer: 3,
-  },
-  {
-    question: "How do you say a guinea pig in Bulgarian?",
-    choice1: "Morsko svinche",
-    choice2: "Morj",
-    choice3: "Morsko konche",
-    choice4: "Kotka",
-    answer: 1,
-  },
-  {
-    question: "How do you say a rabbit in Bulgarian?",
-    choice1: "Mechka",
-    choice2: "Zaek",
-    choice3: "Kuche",
-    choice4: "Jaba",
-    answer: 2,
-  },
-  {
-    question: "How do you say a frog in Bulgarian?",
-    choice1: "Jaba",
-    choice2: "Mravka",
-    choice3: "Kuche",
-    choice4: "Kotka",
-    answer: 1,
-  },
-  {
-    question: "How do you say a donkey in Bulgarian?",
-    choice1: "Morsko svinche",
-    choice2: "Mravka",
-    choice3: "Kuche",
-    choice4: "Magare",
-    answer: 4,
-  },
-];
+
 
 // ....Functions....
+
+function getCategory() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category");
+  if (category === "animals") {
+    availableQuestions = [...animals];
+  } else if (category === "drinks") {
+    availableQuestions = [...drinks];
+  } else if (category === "colors") {
+    availableQuestions = [...colors];
+  } else if (category === "food") {
+    availableQuestions = [...food];
+  } else {
+    availableQuestions = [...phrases];
+  }
+}
 
 startGame = () => {
   questionNumber = 0;
   score = 0;
-  availableQuestions = [...questions];
+  getCategory();
   getNewQuestion();
 };
 
