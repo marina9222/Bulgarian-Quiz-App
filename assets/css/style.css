@@ -204,6 +204,7 @@ input {
   }
   .reset-btns a {
     width: 40%;
+    margin-left: 20px;
   }
 
   .btn {
