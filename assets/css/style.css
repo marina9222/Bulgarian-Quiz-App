@@ -178,6 +178,9 @@ input {
 #final-score {
   margin-bottom: 25px;
 }
+#score-msg {
+  margin-bottom: 30px;
+}
 
 /* ....High scores page.... */
 
@@ -191,3 +194,5 @@ input {
   font-size: 20px;
   text-align: center;
 }
+
+/* ....Media Queries.... */
