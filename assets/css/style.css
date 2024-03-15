@@ -123,6 +123,15 @@ h2 {
   background-color: #ee4b2b;
 }
 
+.reset-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reset-btns a {
+  width: 20%;
+}
 /* ....Game header.... */
 
 #games-header {
