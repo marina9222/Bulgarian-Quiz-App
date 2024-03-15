@@ -196,3 +196,32 @@ input {
 }
 
 /* ....Media Queries.... */
+
+@media screen and (max-width: 767px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .reset-btns a {
+    width: 40%;
+  }
+
+  .btn {
+    width: 60%;
+  }
+  .header-prefix,
+  #timer,
+  .header-main-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #games-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-item {
+    margin-bottom: 0;
+  }
+}
