@@ -50,7 +50,7 @@ let drinks = [
     choice2: "Butilka",
     choice3: "Sok",
     choice4: "Chai",
-    answer: 4,
+    answer: "Chai",
   },
   {
     question: "How do you say a beer in Bulgarian?",
@@ -58,7 +58,7 @@ let drinks = [
     choice2: "Bora",
     choice3: "Chasha",
     choice4: "Kafe",
-    answer: 1,
+    answer: "Bira",
   },
   {
     question: "How do you say a wine in Bulgarian?",
@@ -66,7 +66,7 @@ let drinks = [
     choice2: "Vino",
     choice3: "Bira",
     choice4: "Chai",
-    answer: 2,
+    answer: "Vino",
   },
   {
     question: "How do you say a juice in Bulgarian?",
@@ -74,7 +74,7 @@ let drinks = [
     choice2: "Kafe",
     choice3: "Rakia",
     choice4: "Sok",
-    answer: 4,
+    answer: "Sok",
   },
   {
     question: "How do you say a pop in Bulgarian?",
@@ -82,7 +82,7 @@ let drinks = [
     choice2: "Bezalkoholno",
     choice3: "Sok",
     choice4: "Vino",
-    answer: 2,
+    answer: "Bezalkoholno",
   },
 ];
 
@@ -93,7 +93,7 @@ let colors = [
     choice2: "Cherno",
     choice3: "Zeleno",
     choice4: "Byalo",
-    answer: 2,
+    answer: "Cherno",
   },
   {
     question: "How do you say white in Bulgarian?",
@@ -101,7 +101,7 @@ let colors = [
     choice2: "Cherno",
     choice3: "Cherveno",
     choice4: "Julto",
-    answer: 1,
+    answer: "Byalo",
   },
   {
     question: "How do you say yellow in Bulgarian?",
@@ -109,7 +109,7 @@ let colors = [
     choice2: "Zeleno",
     choice3: "Oranjevo",
     choice4: "Julto",
-    answer: 4,
+    answer: "Julto",
   },
   {
     question: "How do you say grey in Bulgarian?",
@@ -117,7 +117,7 @@ let colors = [
     choice2: "Oranjevo",
     choice3: "Zeleno",
     choice4: "Lilavo",
-    answer: 1,
+    answer: "Sivo",
   },
   {
     question: "How do you say pink in Bulgarian?",
@@ -125,7 +125,7 @@ let colors = [
     choice2: "Byalo",
     choice3: "Rozovo",
     choice4: "Cherno",
-    answer: 3,
+    answer: "Rozovo",
   },
 ];
 let food = [
@@ -135,7 +135,7 @@ let food = [
     choice2: "Supa",
     choice3: "Kufte",
     choice4: "Palachinka",
-    answer: 2,
+    answer: "Supa",
   },
   {
     question: "How do you say ice cream in Bulgarian?",
@@ -143,7 +143,7 @@ let food = [
     choice2: "Supa",
     choice3: "Sladoled",
     choice4: "Kufte",
-    answer: 3,
+    answer: "Sladoled",
   },
   {
     question: "How do you say pancake in Bulgarian?",
@@ -151,7 +151,7 @@ let food = [
     choice2: "Desert",
     choice3: "Sladoled",
     choice4: "Pitka",
-    answer: 1,
+    answer: "Palachinka",
   },
   {
     question: "How do you say bread in Bulgarian?",
@@ -159,7 +159,7 @@ let food = [
     choice2: "Hlyab",
     choice3: "Karnache",
     choice4: "Sladoled",
-    answer: 2,
+    answer: "Hlyab",
   },
   {
     question: "How do you say toast in Bulgarian?",
@@ -167,7 +167,7 @@ let food = [
     choice2: "Hlyab",
     choice3: "Karnache",
     choice4: "Bob",
-    answer: 1,
+    answer: "Princesa",
   },
 ];
 let phrases = [
@@ -177,7 +177,7 @@ let phrases = [
     choice2: "Mersi",
     choice3: "Zdravey",
     choice4: "Sujelyavam",
-    answer: 3,
+    answer: "Zdravey",
   },
   {
     question: "How do you say 'Goodbye' in Bulgarian?",
@@ -185,7 +185,7 @@ let phrases = [
     choice2: "Mersi",
     choice3: "Sujelyavam",
     choice4: "Zdravey",
-    answer: 1,
+    answer: "Chao",
   },
   {
     question: "How do you say 'Sorry' in Bulgarian?",
@@ -193,7 +193,7 @@ let phrases = [
     choice2: "Mersi",
     choice3: "Ne",
     choice4: "Da",
-    answer: 1,
+    answer: "Sujelyavam",
   },
   {
     question: "How do you say 'No' in Bulgarian?",
@@ -201,7 +201,7 @@ let phrases = [
     choice2: "Dobre",
     choice3: "Mersi",
     choice4: "Ne",
-    answer: 4,
+    answer: "Ne",
   },
   {
     question: "How do you say 'Yes' in Bulgarian?",
@@ -209,6 +209,6 @@ let phrases = [
     choice2: "Da",
     choice3: "Ne",
     choice4: "Moje",
-    answer: 2,
+    answer: "Da",
   },
 ];

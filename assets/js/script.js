@@ -100,7 +100,6 @@ choices.forEach((choice) => {
     let correctAnswer = currentQuestion.answer.toLowerCase();
     const classToApply =
       selectedAnswer == correctAnswer ? "correct" : "incorrect";
-
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
     }
