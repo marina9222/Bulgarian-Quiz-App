@@ -7,7 +7,7 @@ let animals = [
     choice2: "Mravka",
     choice3: "Kuche",
     choice4: "Kotka",
-    answer: 3,
+    answer: "Kuche",
   },
   {
     question: "How do you say a guinea pig in Bulgarian?",
@@ -15,7 +15,7 @@ let animals = [
     choice2: "Morj",
     choice3: "Morsko konche",
     choice4: "Kotka",
-    answer: 1,
+    answer: "Morsko svinche",
   },
   {
     question: "How do you say a rabbit in Bulgarian?",
@@ -23,7 +23,7 @@ let animals = [
     choice2: "Zaek",
     choice3: "Kuche",
     choice4: "Jaba",
-    answer: 2,
+    answer: "Zaek",
   },
   {
     question: "How do you say a frog in Bulgarian?",
@@ -31,7 +31,7 @@ let animals = [
     choice2: "Mravka",
     choice3: "Kuche",
     choice4: "Kotka",
-    answer: 1,
+    answer: "Jaba",
   },
   {
     question: "How do you say a donkey in Bulgarian?",
@@ -39,7 +39,7 @@ let animals = [
     choice2: "Mravka",
     choice3: "Kuche",
     choice4: "Magare",
-    answer: 4,
+    answer: "Magare",
   },
 ];
 

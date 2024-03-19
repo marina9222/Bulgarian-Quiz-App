@@ -1,7 +1,7 @@
 // ...Variables....
 
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+let choices = document.querySelectorAll(".choice-text");
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 const questionCounterText = document.getElementById("question-counter");
@@ -14,8 +14,6 @@ let questionNumber = 0;
 let availableQuestions = [];
 let timer;
 let timeRemaining = 10;
-
-
 
 // ....Functions....
 
@@ -73,9 +71,18 @@ getNewQuestion = () => {
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
-  choices.forEach((choice) => {
-    const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
+
+  let questionChoices = [
+    currentQuestion.choice1,
+    currentQuestion.choice2,
+    currentQuestion.choice3,
+    currentQuestion.choice4,
+  ];
+
+  questionChoices = questionChoices.sort(() => Math.random() - 0.5);
+
+  choices.forEach(function (choice, i) {
+    choice.innerText = questionChoices[i];
   });
   availableQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
@@ -88,10 +95,11 @@ choices.forEach((choice) => {
 
     acceptingAnswers = false;
     const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
-
+    let selectedAnswer = selectedChoice.innerText;
+    selectedAnswer = selectedAnswer.toLowerCase();
+    let correctAnswer = currentQuestion.answer.toLowerCase();
     const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+      selectedAnswer == correctAnswer ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
