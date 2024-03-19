@@ -1,4 +1,4 @@
-// ...Variables....
+// Variables
 
 const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById("save-score");
@@ -10,8 +10,8 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const MAX_HIGH_SCORES = 5;
 finalScore.innerText = mostRecentScore;
 
-// ....Functions....
-
+// Functions
+// Showing a message depending on score
 scoreMessage = () => {
   if (mostRecentScore <= 20) {
     scoreMsg.textContent = "Go back to study!! 🙈";
@@ -23,6 +23,7 @@ scoreMessage = () => {
 };
 
 scoreMessage();
+//Saving the username with the score and saving it to local storage
 username.addEventListener("keyup", () => {
   saveScoreBtn.disabled = !username.value;
 });

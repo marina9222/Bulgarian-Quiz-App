@@ -1,4 +1,4 @@
-// ...Variables....
+// Variables
 
 const question = document.getElementById("question");
 let choices = document.querySelectorAll(".choice-text");
@@ -15,8 +15,9 @@ let availableQuestions = [];
 let timer;
 let timeRemaining = 10;
 
-// ....Functions....
+// Functions
 
+// Fetching the questions of each category depending on the choice of the user
 function getCategory() {
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get("category");
@@ -33,6 +34,7 @@ function getCategory() {
   }
 }
 
+// Starting the game function
 startGame = () => {
   questionNumber = 0;
   score = 0;
@@ -40,6 +42,7 @@ startGame = () => {
   getNewQuestion();
 };
 
+// Setting the timer for each question
 startTimer = () => {
   const timerEl = document.getElementById("timer");
   timeRemaining = 10;
@@ -55,9 +58,13 @@ startTimer = () => {
   }, 1000);
 };
 
+// Stopping the timer
 stopTimer = () => {
   clearInterval(timer);
 };
+
+// Getting a new question
+
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionNumber >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
@@ -68,7 +75,7 @@ getNewQuestion = () => {
   questionNumber++;
   questionCounterText.innerText = `${questionNumber}/${MAX_QUESTIONS}`;
   startTimer();
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length); //getting random questions out of the available questions
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
@@ -79,7 +86,7 @@ getNewQuestion = () => {
     currentQuestion.choice4,
   ];
 
-  questionChoices = questionChoices.sort(() => Math.random() - 0.5);
+  questionChoices = questionChoices.sort(() => Math.random() - 0.5); // shuffling the answers
 
   choices.forEach(function (choice, i) {
     choice.innerText = questionChoices[i];
@@ -89,6 +96,7 @@ getNewQuestion = () => {
 };
 
 choices.forEach((choice) => {
+  // incrementing the score , checking if the answer is correct or incorrect ,adding the class for incorrect and correct
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
     stopTimer();
