@@ -57,3 +57,14 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-home.png)   | ![screenshot](documentation/responsiveness/tablet-game.png)   | ![screenshot](documentation/responsiveness/tablet-end.png)   | ![screenshot](documentation/responsiveness/tablet-highscore.png)   | Works as expected |
 | Desktop           | ![screenshot](documentation/responsiveness/dekstop-home.png)  | ![screenshot](documentation/responsiveness/dekstop-game.png)  | ![screenshot](documentation/responsiveness/dekstop-end.png)  | ![screenshot](documentation/responsiveness/dekstop-highscore.png)  | Works as expected |
 | iPhone 13         | ![screenshot](documentation/responsiveness/iphone13-home.png) | ![screenshot](documentation/responsiveness/iphone13-game.png) | ![screenshot](documentation/responsiveness/iphone13-end.png) | ![screenshot](documentation/responsiveness/iphone13-highscore.png) | Minor issue       |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page            | Mobile                                                        | Desktop                                                        | Notes               |
+| --------------- | ------------------------------------------------------------- | -------------------------------------------------------------- | ------------------- |
+| Home page       | ![screenshot](documentation/lighthouse/mobile-home.png)       | ![screenshot](documentation/lighthouse/dekstop-home.png)       | Some minor warnings |
+| Game page       | ![screenshot](documentation/lighthouse/mobile-game.png)       | ![screenshot](documentation/lighthouse/dekstop-game.png)       | Works good          |
+| End page        | ![screenshot](documentation/lighthouse/mobile-end.png)        | ![screenshot](documentation/lighthouse/dekstop-end.png)        | Works good          |
+| Highscores page | ![screenshot](documentation/lighthouse/mobile-highscores.png) | ![screenshot](documentation/lighthouse/dekstop-highscores.png) | Works good          |
