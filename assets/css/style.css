@@ -140,7 +140,7 @@ h2 {
   width: 100%;
 }
 
-#header-item {
+.header-item {
   display: flex;
   margin-bottom: 25px;
   gap: 10px;
@@ -223,7 +223,7 @@ input {
     justify-content: center;
     align-items: center;
   }
-  #header-item {
+  .header-item {
     margin-bottom: 0;
   }
 }
