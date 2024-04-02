@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 const highScoresList = document.getElementById("highscores-list");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 //Getting the high scores

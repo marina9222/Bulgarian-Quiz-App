@@ -73,27 +73,65 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Defensive programming was manually tested with the below user acceptance testing:
 
-| Page | Expectation | Test | Result | Fix | Screenshot |
-| ---- | ----------- | ---- | ------ | --- | ---------- |
+| Page        | Expectation                                                                                | Test                                                                                                                 | Result                                                                                                     | Fix                       | Screenshot                                                  |
+| ----------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------------------------- |
+| Home        |                                                                                            |                                                                                                                      |                                                                                                            |                           |                                                             |
+|             | Start game button is expected to start the game when the user click on it                  | Tested the feature by clicking the button.                                                                           | The feature behaved as expected, and it did start the game                                                 | Test concluded and passed | ![screenshot](documentation/features-testing/feature1.png)  |
+|             | Select category is expected to allow the user to select category when the user click on it | Tested the feature by clicking on it.                                                                                | The feature behaved as expected, and it did change category.                                               | Test concluded and passed | ![screenshot](documentation/features-testing/feature2.png)  |
+|             | High scores button is expected to redirect the user to the high scores page.               | Tested the feature by doing clicking on it.                                                                          | The feature behaved as expected, and it did redirect me to the high scores page.                           | Test concluded and passed | ![screenshot](documentation/features-testing/feature00.png) |
+| Game        |                                                                                            |                                                                                                                      |                                                                                                            |                           |                                                             |
+|             | Clicking on the right answer is expected to change the color to green when clicked         | Tested the feature by choosing the right answer                                                                      | The feature behaved as expected, and it did turn green                                                     | Test concluded and passed | ![screenshot](documentation/features-testing/feature3.png)  |
+|             | Clicking on the wrong answer is expected to change the color to red when clicked           | Tested the feature by choosing the wrong answer                                                                      | The feature behaved as expected, and it did turn red                                                       | Test concluded and passed | ![screenshot](documentation/features-testing/feature4.png)  |
+|             | Clicking on the restart button is expected to restart the game when clicked                | Tested the feature by clicking on it                                                                                 | The feature behaved as expected, and it did restart the game                                               | Test concluded and passed | ![screenshot](documentation/features-testing/feature5.png)  |
+|             | Clicking on the home button is expected to redirect the user to the home page              | Tested the feature by choosing clicking on it                                                                        | The feature behaved as expected, and it redirected me to the home page                                     | Test concluded and passed | ![screenshot](documentation/features-testing/feature6.png)  |
+|             | Score should increment by 10 on every guessed question                                     | Tested the feature by choosing the right answer on every question                                                    | The feature behaved as expected, and it did increment my score by 10 for each question that I have guessed | Test concluded and passed | ![screenshot](documentation/features-testing/feature8.png)  |
+|             | 10 second Timer                                                                            | Tested the feature by waiting for the whole 10 seconds to pass to check if it would redirect me to the next question | The feature behaved as expected, and it did redirect me                                                    | Test concluded and passed | ![screenshot](documentation/features-testing/feature7.png)  |
+| End         |                                                                                            |                                                                                                                      |                                                                                                            |                           |                                                             |
+|             | Showing the right end score                                                                | Tested the feature by playing the game                                                                               | The feature behaved as expected, and it show my accurate score                                             | Test concluded and passed | ![screenshot](documentation/features-testing/feature9.png)  |
+|             | Message depending on the end score                                                         | Tested the feature by getting different score                                                                        | The feature behaved as expected, and it change the message depending on score                              | Test concluded and passed | ![screenshot](documentation/features-testing/feature10.png) |
+|             | Enter username to save your score                                                          | Tested the feature by entering my name                                                                               | The feature behaved as expected, and it save my score                                                      | Test concluded and passed | ![screenshot](documentation/features-testing/feature11.png) |
+|             | Not letting the user to click on the save button if there is no name entered               | Tested the feature by leaving the username empty                                                                     | The feature behaved as expected, and it didnt let me to click save                                         | Test concluded and passed | ![screenshot](documentation/features-testing/feature16.png) |
+|             | Restart button is expected to restart the game when clicked                                | Tested the feature by clicking on it                                                                                 | The feature behaved as expected, and it did reset the game                                                 | Test concluded and passed | ![screenshot](documentation/features-testing/feature12.png) |
+|             | Go home button is expected to redirect the user to the home page                           | Tested the feature by licking on it                                                                                  | The feature behaved as expected, and it did redirect me to the home page                                   | Test concluded and passed | ![screenshot](documentation/features-testing/feature13.png) |
+| High scores |                                                                                            |                                                                                                                      |                                                                                                            |                           |                                                             |
+|             | High score chart showing top 5 high scores                                                 | Tested the feature by playing the game and getting different scores and saving them                                  | The feature behaved as expected, and it show my accurate score and position on the chart                   | Test concluded and passed | ![screenshot](documentation/features-testing/feature14.png) |
+|             | Go home button redirecting to the home page                                                | Tested the feature by clicking on it                                                                                 | The feature behaved as expected, and it did redirect me to the home page.                                  | Test concluded and passed | ![screenshot](documentation/features-testing/feature15.png) |
 
-| Home | | | | | |
-| | Start game button is expected to start the game when the user click on it | Tested the feature by clicking the button. | The feature behaved as expected, and it did start the game | Test concluded and passed | ![screenshot](documentation/features-testing/feature1.png) |
-| | Select category is expected to allow the user to select category when the user click on it | Tested the feature by clicking on it. | The feature behaved as expected, and it did change category. | Test concluded and passed | ![screenshot](documentation/features-testing/feature2.png) |
-| | High scores button is expected to redirect the user to the high scores page. | Tested the feature by doing clicking on it. | The feature behaved as expected, and it did redirect me to the high scores page. | Test concluded and passed | ![screenshot](documentation/features-testing/feature00.png) |
-| Game | | | | | |
-| | Clicking on the right answer is expected to change the color to green when clicked | Tested the feature by choosing the right answer| The feature behaved as expected, and it did turn green | Test concluded and passed | ![screenshot](documentation/features-testing/feature3.png) |
-| | Clicking on the wrong answer is expected to change the color to red when clicked | Tested the feature by choosing the wrong answer | The feature behaved as expected, and it did turn red | Test concluded and passed| ![screenshot](documentation/features-testing/feature4.png) |
-| | Clicking on the restart button is expected to restart the game when clicked | Tested the feature by clicking on it| The feature behaved as expected, and it did restart the game | Test concluded and passed | ![screenshot](documentation/features-testing/feature5.png) |
-| | Clicking on the home button is expected to redirect the user to the home page | Tested the feature by choosing clicking on it | The feature behaved as expected, and it redirected me to the home page | Test concluded and passed | ![screenshot](documentation/features-testing/feature6.png) |
-| | Score should increment by 10 on every guessed question| Tested the feature by choosing the right answer on every question | The feature behaved as expected, and it did increment my score by 10 for each question that I have guessed | Test concluded and passed | ![screenshot](documentation/features-testing/feature8.png) |
-| | 10 second Timer | Tested the feature by waiting for the whole 10 seconds to pass to check if it would redirect me to the next question| The feature behaved as expected, and it did redirect me | Test concluded and passed | ![screenshot](documentation/features-testing/feature7.png) |
-| End | | | | | |
-| | Showing the right end score | Tested the feature by playing the game | The feature behaved as expected, and it show my accurate score | Test concluded and passed | ![screenshot](documentation/features-testing/feature9.png) |
-| | Message depending on the end score | Tested the feature by getting different score | The feature behaved as expected, and it change the message depending on score | Test concluded and passed| ![screenshot](documentation/features-testing/feature10.png) |
-| | Enter username to save your score | Tested the feature by entering my name | The feature behaved as expected, and it save my score | Test concluded and passed | ![screenshot](documentation/features-testing/feature11.png) |
-| | Not letting the user to click on the save button if there is no name entered | Tested the feature by leaving the username empty| The feature behaved as expected, and it didnt let me to click save | Test concluded and passed | ![screenshot](documentation/features-testing/feature16.png) |
-| |Restart button is expected to restart the game when clicked | Tested the feature by clicking on it | The feature behaved as expected, and it did reset the game | Test concluded and passed | ![screenshot](documentation/features-testing/feature12.png) |
-| | Go home button is expected to redirect the user to the home page | Tested the feature by licking on it| The feature behaved as expected, and it did redirect me to the home page| Test concluded and passed | ![screenshot](documentation/features-testing/feature13.png) |
-| High scores | | | | | |
-| | High score chart showing top 5 high scores | Tested the feature by playing the game and getting different scores and saving them | The feature behaved as expected, and it show my accurate score and position on the chart | Test concluded and passed | ![screenshot](documentation/features-testing/feature14.png) |
-| | Go home button redirecting to the home page | Tested the feature by clicking on it| The feature behaved as expected, and it did redirect me to the home page.| Test concluded and passed | ![screenshot](documentation/features-testing/feature15.png) |
+## User Story Testing
+
+| User Story                                                                                          | Screenshot                                          |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature03.png) |
+| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature04.png) |
+| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature05.png) |
+| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature06.png) |
+
+## Bugs
+
+- JS Uncaught ReferenceError: `question` is undefined/not defined at startGame function
+
+  ![screenshot](documentation/bugs/bug01.png)
+
+  - To fix this, I created a new variable called questions instead of putting them in the available questions array.
+
+- JS TypeError: Assignment to constant variable at HTMLParagraphElement (showing that the right answer on the question is wrong).
+
+  ![screenshot](documentation/bugs/bug02.png)
+
+  - To fix this, I removed the parentElement on addClass.
+
+- CSS When answer has been clicked and cursor stays on the answer doesnt change color to incorrect or correct.
+
+  ![screenshot](documentation/bugs/bug04.png)
+
+  - To fix this, I changed the .choice-text:hover to .choice-text:not (.incorrect and correct):hover.
+
+  - JS Timer was skipping numbers or going quicker that it should on next question.
+
+  ![screenshot](documentation/bugs/bug03.png)
+
+  - To fix this, I moved the stopTimer function from outside in the end to the beginning of the addEventListener function.
+
+## Unfixed Bugs

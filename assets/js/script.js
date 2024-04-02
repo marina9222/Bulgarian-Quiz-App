@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 // Variables
 
 const question = document.getElementById("question");
@@ -6,6 +7,8 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -19,8 +22,6 @@ let timeRemaining = 10;
 
 // Fetching the questions of each category depending on the choice of the user
 function getCategory() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get("category");
   if (category === "animals") {
     availableQuestions = [...animals];
   } else if (category === "drinks") {
@@ -69,7 +70,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionNumber >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("end.html"); // go to end page
+    return window.location.assign(`end.html?category=${category}`); // go to end page
   }
 
   questionNumber++;
