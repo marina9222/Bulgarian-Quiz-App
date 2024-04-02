@@ -74,10 +74,12 @@ label {
 }
 
 .btn:hover,
-.choice-text:not(.incorrect):not(.correct):hover {
+.btn:hover,
+.choice-text:not(.incorrect):not(.correct):not(:active):not(:focus):hover {
   background-color: #78869b;
   cursor: pointer;
 }
+
 .btn[disabled]:hover {
   cursor: not-allowed;
 }
