@@ -40,7 +40,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home                                                   | About                                                  | Contact                                               | etc                                                          | Notes             |
+| Browser | Home                                                   | Game                                                   | End                                                   | High scores                                                  | Notes             |
 | ------- | ------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------ | ----------------- |
 | Chrome  | ![screenshot](documentation/browsers/chrome-home.png)  | ![screenshot](documentation/browsers/chrome-game.png)  | ![screenshot](documentation/browsers/chrome-end.png)  | ![screenshot](documentation/browsers/chrome-highscores.png)  | Works as expected |
 | Firefox | ![screenshot](documentation/browsers/mozilla-home.png) | ![screenshot](documentation/browsers/mozilla-game.png) | ![screenshot](documentation/browsers/mozilla-end.png) | ![screenshot](documentation/browsers/mozilla-highscores.png) | Works as expected |
@@ -51,7 +51,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device            | Home                                                          | About                                                         | Contact                                                      | etc                                                                | Notes             |
+| Device            | Home                                                          | Game                                                          | End                                                          | High scores                                                        | Notes             |
 | ----------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ | ----------------- |
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-home.png)   | ![screenshot](documentation/responsiveness/mobile-game.png)   | ![screenshot](documentation/responsiveness/mobile-end.png)   | ![screenshot](documentation/responsiveness/mobile-highscore.png)   | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-home.png)   | ![screenshot](documentation/responsiveness/tablet-game.png)   | ![screenshot](documentation/responsiveness/tablet-end.png)   | ![screenshot](documentation/responsiveness/tablet-highscore.png)   | Works as expected |
