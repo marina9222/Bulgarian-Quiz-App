@@ -1,4 +1,5 @@
 /* jshint esversion: 11 */
+
 // Variables
 
 const question = document.getElementById("question");

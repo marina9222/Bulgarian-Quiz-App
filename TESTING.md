@@ -28,13 +28,13 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-| Directory | File          | Screenshot                                                     | Notes |
-| --------- | ------------- | -------------------------------------------------------------- | ----- |
-| assets    | category.js   | ![screenshot](documentation/validation/path-to-screenshot.png) |       |
-| assets    | end.js        | ![screenshot](documentation/validation/path-to-screenshot.png) |       |
-| assets    | highscores.js | ![screenshot](documentation/validation/path-to-screenshot.png) |       |
-| assets    | questions.js  | ![screenshot](documentation/validation/path-to-screenshot.png) |       |
-| assets    | script.js     | ![screenshot](documentation/validation/path-to-screenshot.png) |       |
+| Directory | File          | Screenshot                                                          | Notes     |
+| --------- | ------------- | ------------------------------------------------------------------- | --------- |
+| assets    | category.js   | ![screenshot](documentation/validation/catergoryjs-validation.png)  | No errors |
+| assets    | end.js        | ![screenshot](documentation/validation/endjs-validation.png)        | No errors |
+| assets    | highscores.js | ![screenshot](documentation/validation/highscoresjs-validation.png) | No errors |
+| assets    | questions.js  | ![screenshot](documentation/validation/questionsjs-validation.png)  | No errors |
+| assets    | script.js     | ![screenshot](documentation/validation/scriptjs-validation.png)     | No errors |
 
 ## Browser Compatibility
 
@@ -99,14 +99,15 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-| User Story                                                                                          | Screenshot                                          |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.       | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***. | ![screenshot](documentation/features/feature06.png) |
+| User Story                                                                                                                 | Screenshot                                          |
+| -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| As a new site user, I would like to have a simple menu, so that I can navigate easily through the app..                    | ![screenshot](documentation/features/feature07.png) |
+| As a new site user, I would like to have category selection, so that I can practice my knowledge on different areas.       | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to see a high score chart after the game , so that I can try and improve my score.        | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like to have a variety of questions, so that I can learn and practice more.                    | ![screenshot](documentation/features/feature04.png) |
+| As a returning site user, I would like to have more categories, so that I can practices on different areas.                | ![screenshot](documentation/features/feature01.png) |
+| As a returning site user, I would like to have a difficulty selections, so that I can test my level of bulgarian language. | ![screenshot](documentation/features/feature07.png) |
+| As a returning site user, I would like to choose my time per questions , so that I can have more or less time to answer.   | ![screenshot](documentation/features/feature07.png) |
 
 ## Bugs
 
@@ -135,3 +136,9 @@ Defensive programming was manually tested with the below user acceptance testing
   - To fix this, I moved the stopTimer function from outside in the end to the beginning of the addEventListener function.
 
 ## Unfixed Bugs
+
+- CSS On mobile device after selecting an answer doesnt matter if its correct or incorrect the next questions shows dark grey background of the previous chosen answer from previous question.
+
+  ![screenshot](documentation/bugs/bug05.png)
+
+- Attempted fix: I tried everything , used chatgpt as well but with no luck.
