@@ -142,3 +142,6 @@ Defensive programming was manually tested with the below user acceptance testing
   ![screenshot](documentation/bugs/bug05.png)
 
 - Attempted fix: I tried everything , used chatgpt as well but with no luck.
+
+> [!NOTE]  
+> There are no remaining bugs that I am aware of.
