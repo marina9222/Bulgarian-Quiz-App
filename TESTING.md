@@ -129,7 +129,7 @@ Defensive programming was manually tested with the below user acceptance testing
 
   - To fix this, I changed the .choice-text:hover to .choice-text:not (.incorrect and correct):hover.
 
-  - JS Timer was skipping numbers or going quicker that it should on next question.
+- JS Timer was skipping numbers or going quicker that it should on next question.
 
   ![screenshot](documentation/bugs/bug03.png)
 
